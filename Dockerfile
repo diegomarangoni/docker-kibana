@@ -6,7 +6,8 @@ ENV KIBANA_VERSION 4.0.1
 
 RUN apt-get update && apt-get install -y curl tar
 
-RUN curl -SL "https://download.elasticsearch.org/kibana/kibana/kibana-$KIBANA_VERSION-linux-x64.tar.gz" -o kibana.tar.gz \
+RUN uname -m | grep -ciq 'x86_64' && ARCH="x64" || ARCH="x86" \
+    && curl -SL "https://download.elasticsearch.org/kibana/kibana/kibana-$KIBANA_VERSION-linux-$ARCH.tar.gz" -o kibana.tar.gz \
     && mkdir -p /opt/kibana \
     && tar -xf kibana.tar.gz -C /opt/kibana --strip-components=1 \
     && rm kibana.tar.gz
