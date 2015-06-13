@@ -13,7 +13,7 @@
 
 ### Forcing different version
 
-    docker run -it -e KIBANA_VERSION=4.0.1 diegomarangoni/kibana
+    docker run -it -e KIBANA_VERSION=4.0.2 diegomarangoni/kibana
 
 ### Changing configuration file
 
@@ -30,10 +30,10 @@ Copy file content to a local file, do the necessary changes and run the containe
 
 ### From branch `master`
 
-    docker run -it diegomarangoni/kibana:source
+    docker run -it diegomarangoni/kibana:src
 
 ### Forcing different branch
 
-    docker run -it -e KIBANA_BRANCH=4.0 diegomarangoni/kibana:source
+    docker run -it -e KIBANA_BRANCH=4.0 diegomarangoni/kibana:src
 
 You can change the configuration file like described above.
