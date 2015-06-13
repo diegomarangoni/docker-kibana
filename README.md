@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -   [`latest` (*latest/Dockerfile*)](https://github.com/diegomarangoni/docker-kibana/blob/master/Dockerfile)
--   [`source` (*source/Dockerfile*)](https://github.com/diegomarangoni/docker-kibana/blob/release/source/Dockerfile)
+-   [`src` (*src/Dockerfile*)](https://github.com/diegomarangoni/docker-kibana/blob/release/src/Dockerfile)
 
 # How to use this image.
 
